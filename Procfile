@@ -1,1 +1,1 @@
-web: voila --port=$PORT --no-browser --enable_nbextensions=True EgenWebApp_lesson2.ipynb
+web: voila --Voila.tornado_settings='{"headers":{"Content-Security-Policy":"frame-ancestors self *" }}' --port=$PORT --no-browser --strip_sources=True --enable_nbextensions=True --MappingKernelManager.cull_interval=60 --MappingKernelManager.cull_idle_timeout=120 EgenWebApp_lesson2.ipynb
